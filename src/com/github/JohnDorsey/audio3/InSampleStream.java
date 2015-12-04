@@ -32,6 +32,7 @@ public class InSampleStream extends Thread {
             //System.out.println("InSampleStream: fill loop added sample?");
         }
         //System.out.println("InSampleStream.fill: ran");
+        try { Thread.sleep((long) 128); } catch (InterruptedException e) { }
     }
 
     public boolean addSample() {

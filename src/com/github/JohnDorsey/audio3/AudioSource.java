@@ -25,7 +25,6 @@ public class AudioSource {
 
     public Sample read() {
 
-        //inSampleStream.fill();
         return inSampleStream.read();
     }
 
