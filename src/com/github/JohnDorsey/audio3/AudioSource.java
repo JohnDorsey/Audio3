@@ -10,7 +10,7 @@ import java.io.File;
  */
 public class AudioSource {
 
-    public String fileName = "clink1.wav";
+    public String fileName = "dontStop (1).wav";
 
     public AudioFormat audioFormat;
     public AudioInputStream audioInputStream;
@@ -19,8 +19,13 @@ public class AudioSource {
 
     InSampleStream inSampleStream = new InSampleStream(this);
 
+    public void start() {
+        inSampleStream.start();
+    }
+
     public Sample read() {
-        inSampleStream.fill();
+
+        //inSampleStream.fill();
         return inSampleStream.read();
     }
 

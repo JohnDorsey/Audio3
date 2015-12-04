@@ -18,6 +18,10 @@ public class Sample {
         return bytes;
     }
 
+    public String toString() {
+        return "" + Integer.toBinaryString(bytes[0]) + "&" + Integer.toBinaryString(bytes[1]);
+    }
+
     public byte get() {
         byte g = bytes[0];
         flip();

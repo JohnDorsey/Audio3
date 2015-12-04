@@ -5,7 +5,7 @@ package com.github.JohnDorsey.audio3;
  */
 public class Q {
 
-    public int length = 8;
+    public int length = 512;
     public int start = 0;
     public int travel = 0;
     public Sample[] content = new Sample[length];
@@ -23,7 +23,7 @@ public class Q {
     }
 
     public boolean canAdd() {
-        //if (travel >= length) { System.out.println("Q.add: FULL"); return false; }
+        if (travel >= length) { /*System.out.println("Q.add: FULL");*/ return false; } else { /*System.out.println("Q.add: not full");*/ }
         return true;
     }
 

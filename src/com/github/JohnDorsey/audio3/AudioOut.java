@@ -26,10 +26,28 @@ public class AudioOut {
             DataLine.Info dataLineInfo = new DataLine.Info(SourceDataLine.class, audioFormat);
             sourceDataLine = (SourceDataLine) AudioSystem.getLine(dataLineInfo);
         } catch (Exception e) { System.err.println(e); }
+
+
+        open();
+    }
+
+    public void open() {
+        try {
+            sourceDataLine.open(audioFormat);
+            sourceDataLine.start();
+        } catch (Exception e) { System.err.println(e); }
+    }
+
+    public void close() {
+        try {
+            sourceDataLine.drain();
+            sourceDataLine.close();
+        } catch (Exception e) { System.err.println(e); }
     }
 
     public void write(Sample toWrite) {
-        write(new Sample[]  { toWrite } );
+        //write(new Sample[]  { toWrite } );
+        write(new byte[] {toWrite.get(), toWrite.get()});
     }
 
     public void write(byte toWrite) {
@@ -37,8 +55,8 @@ public class AudioOut {
     }
 
     public void write(Sample[] toWrite) {
-        byte[] bToWrite = new byte[65536];
-        for (int i = 0; i < 32768; i++) {
+        byte[] bToWrite = new byte[toWrite.length * 2];
+        for (int i = 0; i < toWrite.length; i++) {
             bToWrite[2 * i] = toWrite[i].get();
             bToWrite[(2 * i) + 1] = toWrite[i].get();
         }
@@ -53,8 +71,8 @@ public class AudioOut {
     }
 
     public void play(Sample[] toPlay) {
-        byte[] bToPlay = new byte[2];
-        for (int i = 0; i < 1; i++) {
+        byte[] bToPlay = new byte[65536];
+        for (int i = 0; i < 32768; i++) {
             bToPlay[2 * i] = toPlay[i].get();
             bToPlay[(2 * i) + 1] = toPlay[i].get();
         }
@@ -63,11 +81,7 @@ public class AudioOut {
 
     public void play(byte[] toPlay) {
         try {
-            sourceDataLine.open(audioFormat);
-            sourceDataLine.start();
             sourceDataLine.write(toPlay, 0, toPlay.length);
-            sourceDataLine.drain();
-            sourceDataLine.close();
         } catch (Exception e) { System.err.println(e); }
     }
 
