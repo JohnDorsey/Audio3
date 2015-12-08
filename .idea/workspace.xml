@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0952be65-1028-4e16-93b8-d1b86439f9eb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/Block.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/LoadFrom.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/SaveTo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/SoundDecode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/SoundEncode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/Audio3.java" afterPath="$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/Audio3.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/SaveTo.java" afterPath="$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/SaveTo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/save.txt" afterPath="$PROJECT_DIR$/save.txt" />
     </list>
     <ignored path="Audio3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,8 +32,8 @@
       <file leaf-file-name="Audio3.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/Audio3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.64082277">
-              <caret line="34" column="47" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.6170886">
+              <caret line="44" column="8" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -84,7 +81,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/SaveTo.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+              <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -149,14 +146,14 @@
         <option value="$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/AudioSource.java" />
         <option value="$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/AudioOut.java" />
         <option value="$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/Q.java" />
-        <option value="$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/Audio3.java" />
         <option value="$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/InSampleStream.java" />
         <option value="$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/LoadFrom.java" />
-        <option value="$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/SaveTo.java" />
         <option value="$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/SoundBlock.java" />
         <option value="$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/Block.java" />
         <option value="$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/SoundDecode.java" />
         <option value="$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/SoundEncode.java" />
+        <option value="$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/SaveTo.java" />
+        <option value="$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/Audio3.java" />
       </list>
     </option>
   </component>
@@ -459,13 +456,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/Audio3.java</url>
-          <line>43</line>
+          <line>59</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/Audio3.java</url>
-          <line>49</line>
+          <line>65</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
@@ -574,16 +571,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/SaveTo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/SoundEncode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -592,10 +579,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/SaveTo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/Audio3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64082277">
-          <caret line="34" column="47" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
+        <state vertical-scroll-proportion="0.6170886">
+          <caret line="44" column="8" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

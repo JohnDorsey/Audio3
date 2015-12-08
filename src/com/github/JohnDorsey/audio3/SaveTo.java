@@ -28,5 +28,11 @@ public class SaveTo {
         } catch (IOException ioe) { }
     }
 
+    public void write(byte[] toWrite) {
+        try {
+            fileOutputStream.write(toWrite);
+        } catch (IOException ioe) { }
+    }
+
 
 }

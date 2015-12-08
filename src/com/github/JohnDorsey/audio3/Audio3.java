@@ -31,9 +31,25 @@ public class Audio3 {
             //System.out.println("Audio3.main: " + i + " = " + storedSound[i].toString());
         //}
 
-        while (1==1) {
-            audioOut.write(audioSource.read());
+        SaveTo saveTo = new SaveTo("save.txt");
+        LoadFrom loadFrom = new LoadFrom("save.txt");
+
+
+        for (int i = 0; i < 524288; i++) {
+            saveTo.write(audioSource.read().getBoth());
         }
+
+        for (int i = 0; i < 524288; i++) {
+            audioOut.write(loadFrom.read());
+        }
+        
+
+        //while (1==1) {
+        //    audioOut.write(audioSource.read());
+        //}
+
+
+
 
         /*
 
