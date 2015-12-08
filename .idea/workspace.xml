@@ -3,11 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="0952be65-1028-4e16-93b8-d1b86439f9eb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Audio3/com/github/JohnDorsey/audio3/Audio3.class" afterPath="$PROJECT_DIR$/out/production/Audio3/com/github/JohnDorsey/audio3/Audio3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Audio3/com/github/JohnDorsey/audio3/AudioSource.class" afterPath="$PROJECT_DIR$/out/production/Audio3/com/github/JohnDorsey/audio3/AudioSource.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Audio3/com/github/JohnDorsey/audio3/AudioOut.class" afterPath="$PROJECT_DIR$/out/production/Audio3/com/github/JohnDorsey/audio3/AudioOut.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Audio3/com/github/JohnDorsey/audio3/InSampleStream.class" afterPath="$PROJECT_DIR$/out/production/Audio3/com/github/JohnDorsey/audio3/InSampleStream.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Audio3/com/github/JohnDorsey/audio3/Q.class" afterPath="$PROJECT_DIR$/out/production/Audio3/com/github/JohnDorsey/audio3/Q.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/Audio3.java" afterPath="$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/Audio3.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/AudioSource.java" afterPath="$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/AudioSource.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/AudioOut.java" afterPath="$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/AudioOut.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/InSampleStream.java" afterPath="$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/InSampleStream.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/Q.java" afterPath="$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/Q.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Audio3.iws" />
@@ -21,6 +23,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Audio3$Main.coverage" NAME="Main Coverage Results" MODIFIED="1449580902398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -30,11 +35,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Audio3.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Audio3.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/Audio3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4921191">
-              <caret line="30" column="90" selection-start-line="30" selection-start-column="90" selection-end-line="30" selection-end-column="90" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="34" column="47" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -56,11 +61,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InSampleStream.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="InSampleStream.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/InSampleStream.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="33" column="57" selection-start-line="33" selection-start-column="57" selection-end-line="33" selection-end-column="57" />
+            <state vertical-scroll-proportion="0.6584939">
+              <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
               <folding>
                 <element signature="e#419#420#0" expanded="true" />
                 <element signature="e#456#457#0" expanded="true" />
@@ -99,7 +104,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/Q.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+              <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -109,13 +114,15 @@
         <entry file="file://$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/AudioOut.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+              <caret line="82" column="52" selection-start-line="82" selection-start-column="52" selection-end-line="82" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1958#1959#0" expanded="true" />
                 <element signature="e#2005#2006#0" expanded="true" />
-                <element signature="e#3272#3273#0" expanded="true" />
-                <element signature="e#3350#3351#0" expanded="true" />
+                <element signature="e#2905#2906#0" expanded="true" />
+                <element signature="e#2966#2967#0" expanded="true" />
+                <element signature="e#3372#3373#0" expanded="true" />
+                <element signature="e#3450#3451#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -143,11 +150,11 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/InSample.java" />
         <option value="$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/Sample.java" />
-        <option value="$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/AudioOut.java" />
-        <option value="$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/Audio3.java" />
-        <option value="$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/Q.java" />
-        <option value="$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/InSampleStream.java" />
         <option value="$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/AudioSource.java" />
+        <option value="$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/AudioOut.java" />
+        <option value="$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/Q.java" />
+        <option value="$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/Audio3.java" />
+        <option value="$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/InSampleStream.java" />
       </list>
     </option>
   </component>
@@ -401,7 +408,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="306" y="174" width="1225" height="937" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -411,10 +418,11 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32997763" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32997763" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32979593" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18204081" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18204081" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -472,26 +480,24 @@
     <entry file="file://$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/AudioOut.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+          <caret line="82" column="52" selection-start-line="82" selection-start-column="52" selection-end-line="82" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1958#1959#0" expanded="true" />
             <element signature="e#2005#2006#0" expanded="true" />
-            <element signature="e#3272#3273#0" expanded="true" />
-            <element signature="e#3350#3351#0" expanded="true" />
+            <element signature="e#2905#2906#0" expanded="true" />
+            <element signature="e#2966#2967#0" expanded="true" />
+            <element signature="e#3372#3373#0" expanded="true" />
+            <element signature="e#3450#3451#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/AudioSource.java">
+    <entry file="file://$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/Q.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#545#546#0" expanded="true" />
-            <element signature="e#583#584#0" expanded="true" />
-          </folding>
+          <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -509,14 +515,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/Q.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/InSample.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -525,23 +523,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/InSampleStream.java">
+    <entry file="file://$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/Audio3.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="57" selection-start-line="33" selection-start-column="57" selection-end-line="33" selection-end-column="57" />
+          <caret line="34" column="47" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
           <folding>
-            <element signature="e#419#420#0" expanded="true" />
-            <element signature="e#456#457#0" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/Audio3.java">
+    <entry file="file://$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/AudioSource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4921191">
-          <caret line="30" column="90" selection-start-line="30" selection-start-column="90" selection-end-line="30" selection-end-column="90" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#545#546#0" expanded="true" />
+            <element signature="e#583#584#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/JohnDorsey/audio3/InSampleStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6584939">
+          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+          <folding>
+            <element signature="e#419#420#0" expanded="true" />
+            <element signature="e#456#457#0" expanded="true" />
           </folding>
         </state>
       </provider>

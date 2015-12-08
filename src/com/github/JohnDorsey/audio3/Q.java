@@ -5,9 +5,10 @@ package com.github.JohnDorsey.audio3;
  */
 public class Q {
 
-    public int length = 512;
+    public int length = 8192;
     public int start = 0;
     public int travel = 0;
+    public boolean isFull;
     public Sample[] content = new Sample[length];
 
     public Q() {
@@ -18,13 +19,14 @@ public class Q {
 
     public void add(Sample toAdd) {
         //System.out.println("add - s" + start + " t" + travel);
-        content[(start + travel) % length] = toAdd;
-        travel++;
+        content[(start + travel++) % length] = toAdd;
+        isFull = travel >= length;
+        //travel++;
     }
 
     public boolean canAdd() {
-        if (travel >= length) { /*System.out.println("Q.add: FULL");*/ return false; } else { /*System.out.println("Q.add: not full");*/ }
-        return true;
+        //if (travel >= length) { /*System.out.println("Q.add: FULL");*/ return false; } else { /*System.out.println("Q.add: not full");*/ }
+        return !isFull;
     }
 
     public Sample read() {
@@ -32,6 +34,7 @@ public class Q {
         Sample result = content[start];
         start = (start + 1) % length;
         travel = Math.max(travel - 1, 0);
+        isFull = travel >= length;
         return result;
     }
 

@@ -22,9 +22,9 @@ public class Audio3 {
         System.out.println("Audio3.main: created audioOut");
         audioSource.start();
 
-        try { Thread.sleep((long) 2000); } catch (InterruptedException e) { }
+        try { Thread.sleep((long) 500); } catch (InterruptedException e) { }
 
-        for (int i = 0; i < (48000 * 50); i++) { audioSource.read(); }
+        //for (int i = 0; i < (48000 * 50); i++) { audioSource.read(); }
             //storedSound[i] = audioSource.read();
             //audioOut.write(storedSound[i]);
 

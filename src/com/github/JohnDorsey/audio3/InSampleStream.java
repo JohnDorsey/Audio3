@@ -23,6 +23,7 @@ public class InSampleStream extends Thread {
     @Override
     public void run() {
         while (1==1) {
+            //try { Thread.sleep((long) 15); } catch (InterruptedException e) { }
             fill();
         }
     }
@@ -31,8 +32,9 @@ public class InSampleStream extends Thread {
         while (addSample()) {
             //System.out.println("InSampleStream: fill loop added sample?");
         }
-        //System.out.println("InSampleStream.fill: ran");
-        try { Thread.sleep((long) 128); } catch (InterruptedException e) { }
+        //while (content.travel < 4096) { addSample(); }
+        //for (int i = 0; i < 128 && addSample(); i++) { }
+        //System.out.println("InSampleStream.fill: full");
     }
 
     public boolean addSample() {

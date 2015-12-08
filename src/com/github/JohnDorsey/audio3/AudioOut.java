@@ -79,6 +79,10 @@ public class AudioOut {
         play(bToPlay);
     }
 
+    public void play(Sample toPlay) {
+        play(new byte[] {toPlay.get(), toPlay.get()});
+    }
+
     public void play(byte[] toPlay) {
         try {
             sourceDataLine.write(toPlay, 0, toPlay.length);
