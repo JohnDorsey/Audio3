@@ -35,7 +35,7 @@ public class AudioOut {
         try {
             sourceDataLine.open(audioFormat);
             sourceDataLine.start();
-        } catch (Exception e) { System.err.println(e); }
+        } catch (Exception e) { System.err.println("AudioOut.Open(): \n" + e); }
     }
 
     public void close() {

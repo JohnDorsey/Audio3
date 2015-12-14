@@ -12,6 +12,8 @@ public class Audio3 {
     public static AudioSource audioSource = new AudioSource();
     public static AudioOut audioOut;
 
+    public static boolean endnow = false;
+
     public static void main(String[] args) {
 
 
@@ -24,51 +26,69 @@ public class Audio3 {
 
         try { Thread.sleep((long) 500); } catch (InterruptedException e) { }
 
-        //for (int i = 0; i < (48000 * 50); i++) { audioSource.read(); }
-            //storedSound[i] = audioSource.read();
-            //audioOut.write(storedSound[i]);
 
-            //System.out.println("Audio3.main: " + i + " = " + storedSound[i].toString());
-        //}
 
-        SaveTo saveTo = new SaveTo("save.txt");
+        //SaveTo saveTo = new SaveTo("save.txt");
         LoadFrom loadFrom = new LoadFrom("save.txt");
 
 
-        for (int i = 0; i < 524288; i++) {
-            saveTo.write(audioSource.read().getBoth());
-        }
 
-        for (int i = 0; i < 524288; i++) {
-            audioOut.write(loadFrom.read());
-        }
-        
 
-        //while (1==1) {
-        //    audioOut.write(audioSource.read());
+        System.out.println("writing...");
+
+        Sample writeT;
+        //while (!endnow) {
+        //    writeT = audioSource.read();
+        //    saveTo.write(writeT.getBoth());
         //}
 
+        //System.out.println("done with write loop");
 
+        //for (int i = 0; i < 131072; i++) {
 
-
-        /*
-
-        audioSource.inSampleStream.stop();
-
-        System.out.println("Audio3.main: loaded sound");
-
-        //for (int i = 0; i < 32768; i++) {
-            //audioOut.write(audioSource.read());
-        for (int i = 0; i < 524288; i++) {
-            audioOut.write(storedSound[i]);
-
+        endnow = false;
+        while (!endnow) {
+            writeT = new Sample(loadFrom.read(), loadFrom.read());
+            audioOut.play(writeT);
+            //audioOut.play(new Sample(loadFrom.read(), loadFrom.read()));
+            //audioOut.play(new Sample(loadFrom.read(), loadFrom.read()));
         }
-            //audioOut.write(storedSound);
-        //System.out.println("inSampleStream has stopped");
-       //}
 
-*/
+
+        System.out.println("played once");
+
+        endnow = false;
+        while (!endnow) {
+            audioOut.play(new Sample(loadFrom.read(), loadFrom.read()));
+            //writeT = new Sample(loadFrom.read(), loadFrom.read());
+        }
+
+        System.out.println("ended");
+
+
+
+
+
+
+
 
     }
 
+    public static void endof() {
+        endnow = true;
+    }
+
 }
+
+
+//for (int i = 0; i < (48000 * 50); i++) { audioSource.read(); }
+//storedSound[i] = audioSource.read();
+//audioOut.write(storedSound[i]);
+
+//System.out.println("Audio3.main: " + i + " = " + storedSound[i].toString());
+//}
+
+
+//while (1==1) {
+//    audioOut.write(audioSource.read());
+//}

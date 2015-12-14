@@ -22,11 +22,12 @@ public class LoadFrom {
     }
 
     public byte read() {
-        byte result = (byte) 0;
+        int result = 0;
         try {
-            result = (byte) fileInputStream.read();
+            result = fileInputStream.read();
         } catch (IOException ioe) { }
-        return result;
+        if (result == -1 ) { System.out.println("LoadFrom.read(): it's al over!"); Audio3.endof(); }
+        return (byte) result;
     }
 
 

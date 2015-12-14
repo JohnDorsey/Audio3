@@ -31,7 +31,7 @@ public class InSample {
     public Sample getNext(){
         Sample nextSample = new Sample((byte) 0, (byte) 0);
         try {
-            parentAudioSource.audioInputStream.read(nextSample.bytes, 0, 2);
+            if (parentAudioSource.audioInputStream.read(nextSample.bytes, 0, 2) == -1) { Audio3.endof(); }
         } catch (Exception e) { System.out.println(e); }
         return nextSample;
     }
