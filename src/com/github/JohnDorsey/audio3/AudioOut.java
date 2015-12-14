@@ -16,7 +16,8 @@ public class AudioOut {
     static SourceDataLine sourceDataLine;
     static AudioFormat audioFormat;
     public static String blank = "                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ";
-
+    public static byte[] rememberDisplay = new byte[] {(byte) 0, (byte) 0, (byte) 0, (byte) 0, (byte) 0, (byte) 0, (byte) 0, (byte) 0};
+    public static int rememberDisplayIndex = 0;
 
     public AudioOut(String nType, String nFileName, AudioFormat nAudioFormat) {
         type = nType;
@@ -102,7 +103,8 @@ public class AudioOut {
 
     public static void byteDisplay(byte[] toDisplay) {
         String thisByte;
-        for (int i = 0; i < toDisplay.length; i+=2) {
+        //if (toDisplay.length < 8) { rememberDisplay[rememberDisplayIndex] = toDisplay[0]; rememberDisplayIndex += toDisplay.length; if (rememberDisplayIndex == 8) { rememberDisplayIndex = 0; byteDisplay(rememberDisplay); } else { return; } }
+        for (int i = 0; i < toDisplay.length; i+=1) {
             thisByte = "                ";
             thisByte += Integer.toBinaryString((int) /*Math.sqrt((double) */toDisplay[i]) + "  ";
             thisByte = thisByte.substring(thisByte.length()-12, thisByte.length());
@@ -113,6 +115,7 @@ public class AudioOut {
             }
         }
     }
+
 
 
 }

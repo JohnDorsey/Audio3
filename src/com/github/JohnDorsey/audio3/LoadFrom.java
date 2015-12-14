@@ -18,7 +18,7 @@ public class LoadFrom {
         loadingFrom = new File(nFileName);
         try {
             fileInputStream = new FileInputStream(loadingFrom);
-        } catch (FileNotFoundException cantFind) { System.err.println("LoadFrom.LoadFrom(String): FileNotFoundException! " + cantFind)}
+        } catch (FileNotFoundException cantFind) { System.err.println("LoadFrom.LoadFrom(String): FileNotFoundException! " + cantFind); }
     }
 
     public byte read() {

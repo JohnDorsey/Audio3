@@ -23,7 +23,7 @@ public class InSampleStream extends Thread {
     @Override
     public void run() {
         while (1==1) {
-            //try { Thread.sleep((long) 15); } catch (InterruptedException e) { }
+            //try { Thread.sleep(10); } catch (InterruptedException e) { }
             fill();
         }
     }

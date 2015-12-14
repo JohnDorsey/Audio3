@@ -19,7 +19,7 @@ public class Audio3 {
 
 
         System.out.println("Audio3.main: creating audioSource");
-        audioSource = new AudioSource("dontStop (1).wav", "raw");
+        audioSource = new AudioSource("dontStop (1).wav", "wav");
         audioSource.start();
         System.out.println("Audio3.main:     created audioSource");
 
@@ -56,7 +56,7 @@ while (1==1) {
     audioOut.write(audioSource.read());
 }
 
-        /*
+/*
         System.out.println("played once");
 
         endnow = false;

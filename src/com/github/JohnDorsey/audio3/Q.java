@@ -5,7 +5,7 @@ package com.github.JohnDorsey.audio3;
  */
 public class Q {
 
-    public int length = 8192;
+    public int length = 1024;
     public int start = 0;
     public int travel = 0;
     public boolean isFull;
