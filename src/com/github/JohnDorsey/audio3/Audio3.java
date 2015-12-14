@@ -9,7 +9,7 @@ public class Audio3 {
     public static int r = 0;
 
     public static Sample storedSound[] = new Sample[524288];
-    public static AudioSource audioSource = new AudioSource();
+    public static AudioSource audioSource; // = new AudioSource();
     public static AudioOut audioOut;
 
     public static boolean endnow = false;
@@ -17,12 +17,16 @@ public class Audio3 {
     public static void main(String[] args) {
 
 
-        System.out.println("Audio3.main: creating audioOut");
 
-        audioOut = new AudioOut("speakers", audioSource.fileName, audioSource.audioFormat);
-
-        System.out.println("Audio3.main: created audioOut");
+        System.out.println("Audio3.main: creating audioSource");
+        audioSource = new AudioSource("dontStop (1).wav", "cqf");
         audioSource.start();
+        System.out.println("Audio3.main:     created audioSource");
+
+
+        System.out.println("Audio3.main: creating audioOut");
+        audioOut = new AudioOut("speakers", audioSource.fileName, audioSource.audioFormat);
+        System.out.println("Audio3.main:     created audioOut");
 
         try { Thread.sleep((long) 500); } catch (InterruptedException e) { }
 
@@ -33,6 +37,7 @@ public class Audio3 {
 
 
 
+        System.out.println("Audio3: the audio format is " + audioSource.audioFormat);
 
         System.out.println("writing...");
 

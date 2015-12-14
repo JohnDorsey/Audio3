@@ -10,14 +10,22 @@ import java.io.File;
  */
 public class AudioSource {
 
-    public String fileName = "dontStop (1).wav";
+    public String fileName; // = "dontStop (1).wav";
+    public String type;
 
     public AudioFormat audioFormat;
     public AudioInputStream audioInputStream;
     public SourceDataLine sourceDataLine;
     public File openFile;
 
-    InSampleStream inSampleStream = new InSampleStream(this);
+    InSampleStream inSampleStream;
+
+    public AudioSource(String nFileName, String nType) {
+        fileName = nFileName;
+        type = nType;
+        inSampleStream = new InSampleStream(this);
+    }
+
 
     public void start() {
         inSampleStream.start();
