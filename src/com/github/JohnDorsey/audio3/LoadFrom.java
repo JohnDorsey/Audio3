@@ -18,16 +18,20 @@ public class LoadFrom {
         loadingFrom = new File(nFileName);
         try {
             fileInputStream = new FileInputStream(loadingFrom);
-        } catch (FileNotFoundException cantFind) { }
+        } catch (FileNotFoundException cantFind) { System.err.println("LoadFrom.LoadFrom(String): FileNotFoundException! " + cantFind)}
     }
 
     public byte read() {
         int result = 0;
         try {
             result = fileInputStream.read();
-        } catch (IOException ioe) { }
+        } catch (IOException ioe) { System.err.println("LoadFrom.read(): IOException! " + ioe); }
         if (result == -1 ) { System.out.println("LoadFrom.read(): it's al over!"); Audio3.endof(); }
         return (byte) result;
+    }
+
+    public byte[] read2() {
+        return new byte[] {read(), read()};
     }
 
 

@@ -19,19 +19,19 @@ public class SaveTo {
         savingTo = new File(fileName);
         try {
             fileOutputStream = new FileOutputStream(savingTo);
-        } catch (FileNotFoundException cantFind) { }
+        } catch (FileNotFoundException cantFind) { System.err.println("SaveTo.SaveTo(String): FileNoteFoundException: " + cantFind); }
     }
 
     public void write(byte toWrite) {
         try {
             fileOutputStream.write((int) toWrite);
-        } catch (IOException ioe) { }
+        } catch (IOException ioe) { System.err.println("SaveTo.write(byte): IOException: " + ioe); }
     }
 
     public void write(byte[] toWrite) {
         try {
             fileOutputStream.write(toWrite);
-        } catch (IOException ioe) { }
+        } catch (IOException ioe) { System.err.println("SaveTo.write(byte[]): IOException: " + ioe); }
     }
 
 

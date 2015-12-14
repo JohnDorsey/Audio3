@@ -13,10 +13,13 @@ import java.util.Random;
 public class InSample {
 
     public AudioSource parentAudioSource;
+    public LoadFrom loadFrom;
 
 
     public InSample(AudioSource nParentAudioSource) {
         parentAudioSource = nParentAudioSource;
+
+
 
         try {
             parentAudioSource.openFile = new File(parentAudioSource.fileName);
@@ -25,7 +28,7 @@ public class InSample {
             parentAudioSource.audioFormat = new AudioFormat(AudioFormat.Encoding.PCM_SIGNED, 44100.0f, 16, 1, 2, 44100.0f, false);
             DataLine.Info dataLineInfo = new DataLine.Info(SourceDataLine.class, parentAudioSource.audioFormat);
             parentAudioSource.sourceDataLine = (SourceDataLine) AudioSystem.getLine(dataLineInfo);
-        } catch (Exception e) { System.err.println(e); }
+        } catch (Exception e) { System.err.println("InSample.InSample(AudioSource): " + e); }
 
 
 
@@ -36,10 +39,10 @@ public class InSample {
         try {
             if (parentAudioSource.type == "wav") {
                 if (parentAudioSource.audioInputStream.read(nextSample.bytes, 0, 2) == -1) { Audio3.endof(); }
-            } else if (parentAudioSource.type == "cqf") {
-                
+            } else if (parentAudioSource.type == "raw") {
+                nextSample.bytes = loadFrom.read2();
             }
-        } catch (Exception e) { System.out.println(e); }
+        } catch (Exception e) { System.err.println("InSample.getNext(): " + e); }
         return nextSample;
     }
 

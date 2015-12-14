@@ -19,7 +19,7 @@ public class Audio3 {
 
 
         System.out.println("Audio3.main: creating audioSource");
-        audioSource = new AudioSource("dontStop (1).wav", "cqf");
+        audioSource = new AudioSource("dontStop (1).wav", "raw");
         audioSource.start();
         System.out.println("Audio3.main:     created audioSource");
 
@@ -51,6 +51,14 @@ public class Audio3 {
 
         //for (int i = 0; i < 131072; i++) {
 
+
+while (1==1) {
+    audioOut.write(audioSource.read());
+}
+
+        /*
+        System.out.println("played once");
+
         endnow = false;
         while (!endnow) {
             writeT = new Sample(loadFrom.read(), loadFrom.read());
@@ -70,7 +78,7 @@ public class Audio3 {
 
         System.out.println("ended");
 
-
+*/
 
 
 
@@ -93,7 +101,3 @@ public class Audio3 {
 //System.out.println("Audio3.main: " + i + " = " + storedSound[i].toString());
 //}
 
-
-//while (1==1) {
-//    audioOut.write(audioSource.read());
-//}

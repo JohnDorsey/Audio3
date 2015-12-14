@@ -25,7 +25,7 @@ public class AudioOut {
         try {
             DataLine.Info dataLineInfo = new DataLine.Info(SourceDataLine.class, audioFormat);
             sourceDataLine = (SourceDataLine) AudioSystem.getLine(dataLineInfo);
-        } catch (Exception e) { System.err.println(e); }
+        } catch (Exception e) { System.err.println("AudioOut.AudioOut: " + e); }
 
 
         open();
@@ -35,14 +35,14 @@ public class AudioOut {
         try {
             sourceDataLine.open(audioFormat);
             sourceDataLine.start();
-        } catch (Exception e) { System.err.println("AudioOut.Open(): \n" + e); }
+        } catch (Exception e) { System.err.println("AudioOut.Open(): " + e); }
     }
 
     public void close() {
         try {
             sourceDataLine.drain();
             sourceDataLine.close();
-        } catch (Exception e) { System.err.println(e); }
+        } catch (Exception e) { System.err.println("AudioOut.close(): " + e); }
     }
 
     public void write(Sample toWrite) {
@@ -67,7 +67,7 @@ public class AudioOut {
         if (type == "speakers") { play(toWrite);
         } else if (type == "dotDisplay") { dotDisplay(toWrite);
         } else if (type == "byteDisplay") { byteDisplay(toWrite);
-        } else { System.err.println("AudioOut.write: no such type: " + type); }
+        } else { System.err.println("AudioOut.write(byte[]): no such type: " + type); }
     }
 
     public void play(Sample[] toPlay) {
@@ -86,7 +86,7 @@ public class AudioOut {
     public void play(byte[] toPlay) {
         try {
             sourceDataLine.write(toPlay, 0, toPlay.length);
-        } catch (Exception e) { System.err.println(e); }
+        } catch (Exception e) { System.err.println("AudioOut.play(byte[]): " + e); }
     }
 
 
