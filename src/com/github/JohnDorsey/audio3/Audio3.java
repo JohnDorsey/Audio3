@@ -54,6 +54,7 @@ public class Audio3 {
 
 while (1==1) {
     audioOut.write(audioSource.read());
+    //try { Thread.sleep((long) 1); } catch (InterruptedException e) { }
 }
 
 /*

@@ -24,7 +24,8 @@ public class InSampleStream extends Thread {
     public void run() {
         while (1==1) {
             //try { Thread.sleep(10); } catch (InterruptedException e) { }
-            fill();
+            //fill();
+            addSample();
         }
     }
 
